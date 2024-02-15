@@ -1,0 +1,52 @@
+.container {
+	padding: 0;
+	margin: 0;
+}
+
+.container li {
+	list-style-type: none;
+}
+
+.node {
+    margin-left: 18px;
+}
+
+/* открытое поддерево */
+.expand-open .expand {
+    background-image: url(img/minus.gif);
+}
+ 
+/* закрытое поддерево */
+.expand-closed .expand {
+    background-image: url(img/plus.gif);
+}
+ 
+/* лист */
+.expand-leaf .expand {
+    background-image: url(img/leaf.gif);
+}
+
+.content {
+    min-height: 18px;
+    margin-left: 18px;
+}
+
+.expand {
+    width: 18px;
+    height: 18px;
+    float: left;
+}
+
+.expand-open .container {
+        display: block;
+}
+.expand-closed .container {
+        display: none;
+}
+
+.expand-open .expand, .expand-closed .expand {
+        cursor: pointer;
+}
+.expand-leaf .expand {
+        cursor: auto;
+}
